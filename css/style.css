@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
+
+/*siempre colocar*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------header---------------------*/
+
+body{
+    font-family: 'Lemonada', cursive;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.966);
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    border-bottom: 2px solid;
+    border-color: #0000001a;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #0000001a;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+header nav ul img{
+    height: 60px;
+}
+
+/* -----------------------main----------------------*/
+
+/*modificar el hero para centrar a la izq*/
+.hero{
+    height: 90vh;
+    background-image: url(../img/unapatilla.jpg);
+    background-attachment: fixed;
+    background-position-x: 40%;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    padding-top: 50px;
+}
+
+.hero p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #7F1C24;
+}
+
+.hero a{
+    text-decoration: none;
+    color: white ;
+    background-color: #61D055;
+    padding: 3px 15px;
+    border-radius: 20px;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8485E;
+    padding: 30px;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+.productos img{
+    width: 350px;
+    height: 360px;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.productos div{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #61D055;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.productos div h3{
+    background-color: white;
+}
+
+.productos div a{
+    text-decoration: none;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #61D055
+}
+
+.nosotros h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.nosotrosIntro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.nosotrosIntro img{
+    width: 300px;
+    height: 300px;
+}
+
+.nosotrosIntro div p{
+    padding: 0px 20px 20px 20px;
+}
+
+.botonRosa{
+    text-decoration: none;
+    color: white ;
+    background-color: #E01F32;
+    padding: 2px 15px 2px 15px ;
+    border-radius: 20px;
+}
+
+
+.zonarandom{
+    background-color: #7F1C24;
+    padding: 20px;
+    color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 25px;
+}
+
+.zonarandom h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.zonarandom div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.zonarandom div p{
+    width: 600px;
+    padding: 20px;
+}
+
+/*----------------------almacen---------------------*/
+
+.almacen{
+    display: flex;
+    justify-content: stretch;
+}
+
+.almacenTitulo {
+    background-color: #E01F32;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+}
+
+.almacenTitulo p{
+    text-align: justify;
+}
+
+.almacenProductos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 5px;
+}
+
+/*.almacenProductos div{
+   border: 5px solid #61D055;
+}
+*/
+
+.almacenProductos div img{
+    width: 350px;
+}
+
+.almacenProductos div h2{
+    padding: 0px 0px 0px 20px;
+    font-size: 1rem;
+}
+
+.almacenProductos div p{
+    background-color: #61d0553b;
+    border-radius: 10px;
+    padding: 0px 0px 0px 20px;
+    font-size: 0.8rem;
+}
+
+
+
+/*----------------------conocenos-------------------*/
+
+.conocenos {
+    display: flex;
+}
+
+.conocenos section{
+    padding: 20px;
+}
+.conocenos section img{
+    width: 500px;
+    height: 500px;
+}
+
+/*----------------------contactanos-------------------*/
+
+.contactanos{
+    display: flex;
+    margin: 5px;
+    justify-content: first baseline;
+}
+
+.contactanosTitulo{
+    background-color: #E01F32;
+    color: white;
+    width: 600px;
+    padding: 20px;
+}
+
+.contactanosFormulario{
+    padding: 20px;
+    width: 80%;
+}
+
+.contactanosFormulario fieldset{
+    padding: 20px;
+    border: 1px solid #61d055ad ;
+    border-radius: 5px;
+}
+
+
+/*----------------------producto1-------------------*/
+
+.productoDescripcion{
+    display: flex;
+}
+
+.productoDescripcion section img{
+    width: 600px;
+    height: 600px;
+}
+
+.productoDescripcion section h1{
+    text-align: center;
+}
+
+.productoDescripcion section p{
+    text-align: justify;
+    padding: 25px;
+}
+
+.productoDescripcion section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonProductoCompra{
+    text-decoration: none;
+    text-align: center;
+    color: white ;
+    background-color: #E01F32;
+    padding: 2px 15px 2px 15px ;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.botonProductoCarrito{
+    text-decoration: none;
+    text-align: center;
+    color: black ;
+    padding: 2px 15px 2px 15px ;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: black;
+    width: 300px;
+    margin-top: 5px;
+    
+
+}
+/*-----------------------mensajepegajoso-------------*/
+
+.mensaje{
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    background-color: #61d055ef;
+    border-radius: 20px;
+    width: 350px;
+    height: 70px;
+    color: #7F1C24 ;
+    font-size: 0.8 rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ----------------------footer---------------------*/
+
+
+.footerLogos{
+    background-color: #E01F32;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #00000062;
+    
+}
+
+.footerLogosRedes img{
+    height: 40px;
+    margin: 10px;
+}
+
+.footerLogosContactanos{
+    display: flex;
+    align-items: center;
+}
+
+.footerLogosContactanos a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.footerLogosContactanos img{
+    height: 30px;
+}
+
+.logoFinal{
+    display: flex;
+    justify-content: center;
+}
+
+.logoFinal img{
+    height: 20px;
+}
+
+/* --------------------media queries---------------------*/
+/*---Colocar al final, si trabajo de escritorio, el media querie se usa max-width, mayor a menor, la menor 350px---*/
+
+@media screen and (max-width: 1190px){    
+
+    .productos img{
+        width: 280px;
+        height: 280px; 
+    }
+    .nosotros div img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 970px){
+
+    .productos img{
+        width: 180px;
+        height: 180px; 
+    }
+    .productos div h3{
+        font-size: 0.8rem;
+    }
+
+    .nosotros div img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .mensaje{
+        width: 200px;
+    }
+    .mensaje p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    
+    .navOcultar{
+        display: none;
+    }
+
+    .nosotrosIntro img{
+        display: none;
+    }
+
+    .zonarandom div{
+        flex-direction: column;
+    }
+
+    .zonarandom div p{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .zonarandom div iframe{
+        width: 500px;
+        height: 280px;
+    }
+
+    .mensaje{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .hero{
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+    .hero a{
+        font-size: 0.8rem;
+    }
+
+    .productos img{
+        width: 100px;
+        height: 100px; 
+    }
+    .productos div h3{
+        display: none;
+    }
+    .productos div a{
+        font-size: 0.8rem;
+    }
+
+    .nosotrosIntro div p{
+        font-size: 0.85rem;
+    }
+
+    .zonarandom div iframe{
+        width: 400px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    header nav ul img{
+        height: 40px;
+        padding: 5px 0px 0px 0px;
+    }
+    .botonRosa{
+        font-size: 0.8rem;
+    }
+
+    .hero{
+        background-position-y: center;
+        height: 44vh;
+    }
+
+    .nosotros h2{
+        font-size: 1rem;
+    }
+
+    .zonarandom div iframe{
+        width: 300px;
+        height: 170px;
+    }
+
+    .zonarandom h2{
+        font-size: 1rem;
+    }
+    .zonarandom div{
+        padding: 0px;
+    }
+    .zonarandom div p{
+        font-size: 0.8rem;
+    }
+
+    .footerLogosRedes{
+        height: 50px;
+    }
+    .footerLogosRedes img{
+        height: 30px;
+    }
+    .footerLogosContactanos img{
+        height: 20px;
+    }
+    .footerLogosContactanos a{
+        font-size: 0.7rem;
+    }
+    .logoFinal img{
+        height: 10px;
+    }
+}
+
+@media screen and (max-width:410px){
+    .hero{
+        background-position-y: bottom;
+        height: 33vh;
+    }
+    .productos div{
+        border: 3px solid #61D055;
+        margin: 3px;
+    }
+    .productos div a{
+        font-size: 0.6rem;
+    }
+    .nosotros h2{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    .nosotrosIntro{
+        padding: 0px 10px;
+    }
+    .nosotrosIntro div p{
+        font-size: 0.7rem;
+    }
+    .zonarandom{
+        margin: 10px;
+    }
+    .zonarandom h2{
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    .zonarandom div iframe{
+        width: 255px;
+        height: 145px;
+    }
+    .zonarandom div p{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width:350px){
+    header nav ul img{
+        height: 30px;
+        padding: 7px 0px 0px 0px;
+    }
+    .botonRosa{
+        font-size: 0.6rem;
+    }
+    .hero{
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+    .hero{
+        background-position-y: -10px;
+        background-position-x: -448px;
+    }
+    .productos img{
+        width: 80px;
+        height: 80px; 
+    }
+    .nosotrosIntro div p{
+        padding: 0px 10px;
+    }
+    .zonarandom div iframe{
+        width: 215px;
+        height: 120px;
+    }
+}
