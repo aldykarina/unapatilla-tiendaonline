@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>producto1</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-               <li><a class="botonRosa" href="./almacen.html">Comprar</a></li>
-               <li><a href="./conocenos.html">Conocenos</a></li>
-               <li><a href="../index.html"><img src="../img/headerlogoprincipal1000x200.png" alt="unapatilla"></a></li>
-               <li><a href="./contactanos.html">Contactanos</a></li>
-               <li><a href=""><img src="../img/navCompra100x100.png" alt="carritodecompras"></a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow bg-body rounded">
+            <div class="container-fluid">
+                <div class="text-decoration-none me-lg-5 pe-lg-5">
+                    <ul class="list-unstyled fw-bold pt-3">
+                        <li><a class="botonRosa" href="../pages/almacen.html">   Comprar   </a></li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="../index.html"><img src="../img/navlogo.png" alt="unapatilla"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fs-6"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav fw-bold align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./conocenos.html">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/navCompra.png" alt="carritodecompras"></a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="productoDescripcion">
@@ -48,5 +67,7 @@
             <a href="../index.html"><img src="../img/footerlogofinal500x100.png" alt="unapatilla"></a>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
 
 /*siempre colocar*/
-
 *{
     margin: 0;
     padding: 0;
@@ -22,40 +21,15 @@ header{
 
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5px;
-    border-bottom: 2px solid;
-    border-color: #0000001a;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px #0000001a;
-}
-
-header nav ul{
-    list-style: none;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-}
-
-header nav ul img{
-    height: 60px;
-}
-
 /* -----------------------main----------------------*/
-
-/*modificar el hero para centrar a la izq*/
 .hero{
     height: 90vh;
-    background-image: url(../img/unapatilla.jpg);
+    background-image: url(../img/unapatilla.png);
     background-attachment: fixed;
-    background-position-x: 40%;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: inherit;
+    background-position-x: center;
     padding-left: 70px;
     padding-top: 50px;
 }
@@ -86,9 +60,9 @@ header nav ul img{
 
 .productos img{
     width: 350px;
-    height: 360px;
+    height: 100%;
     border-radius: 15px 15px 0px 0px;
-
+    vertical-align: baseline;
 }
 
 .productos div{
@@ -102,6 +76,7 @@ header nav ul img{
 
 .productos div h3{
     background-color: white;
+    margin: 0px;
 }
 
 .productos div a{
@@ -141,7 +116,6 @@ header nav ul img{
     padding: 2px 15px 2px 15px ;
     border-radius: 20px;
 }
-
 
 .zonarandom{
     background-color: #7F1C24;
@@ -199,11 +173,6 @@ header nav ul img{
     margin: 5px;
 }
 
-/*.almacenProductos div{
-   border: 5px solid #61D055;
-}
-*/
-
 .almacenProductos div img{
     width: 350px;
 }
@@ -219,8 +188,6 @@ header nav ul img{
     padding: 0px 0px 0px 20px;
     font-size: 0.8rem;
 }
-
-
 
 /*----------------------conocenos-------------------*/
 
@@ -261,7 +228,6 @@ header nav ul img{
     border: 1px solid #61d055ad ;
     border-radius: 5px;
 }
-
 
 /*----------------------producto1-------------------*/
 
@@ -310,9 +276,8 @@ header nav ul img{
     border-color: black;
     width: 300px;
     margin-top: 5px;
-    
-
 }
+
 /*-----------------------mensajepegajoso-------------*/
 
 .mensaje{
@@ -386,6 +351,7 @@ header nav ul img{
 
 @media screen and (max-width: 1190px){    
 
+    /* ------------index------------*/
     .productos img{
         width: 280px;
         height: 280px; 
@@ -396,8 +362,20 @@ header nav ul img{
     }
 }
 
+@media screen and (max-width: 992px){
+
+    .hero{
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 970px){
 
+    /* ------------index------------*/
     .productos img{
         width: 180px;
         height: 180px; 
@@ -421,9 +399,7 @@ header nav ul img{
 
 @media screen and (max-width: 790px) {
     
-    .navOcultar{
-        display: none;
-    }
+    /* ------------index------------*/
 
     .nosotrosIntro img{
         display: none;
@@ -442,21 +418,19 @@ header nav ul img{
         width: 500px;
         height: 280px;
     }
-
-    .mensaje{
-        display: none;
-    }
-
 }
 
 @media screen and (max-width: 650px){
+    
+    /* ------------index------------*/
+    header div a img{
+        height:50px;
+    }
     .hero{
         padding-left: 30px;
         padding-top: 30px;
     }
-    .hero p{
-        font-size: 1rem;
-    }
+
     .hero a{
         font-size: 0.8rem;
     }
@@ -480,23 +454,26 @@ header nav ul img{
         width: 400px;
         height: 220px;
     }
+    .mensaje{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 560px){
 
-    header nav ul img{
-        height: 40px;
-        padding: 5px 0px 0px 0px;
+    /* ------------index------------*/
+    header div a img{
+        height: 35px;
     }
     .botonRosa{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
-
     .hero{
-        background-position-y: center;
-        height: 44vh;
+        padding-left: 25px;
+        padding-top: 15px;
+        height: 50vh;
+        background-size: 800px;
     }
-
     .nosotros h2{
         font-size: 1rem;
     }
@@ -515,7 +492,6 @@ header nav ul img{
     .zonarandom div p{
         font-size: 0.8rem;
     }
-
     .footerLogosRedes{
         height: 50px;
     }
@@ -534,9 +510,10 @@ header nav ul img{
 }
 
 @media screen and (max-width:410px){
-    .hero{
-        background-position-y: bottom;
-        height: 33vh;
+    
+    /* ------------index------------*/
+    header div a img{
+        height: 25px;
     }
     .productos div{
         border: 3px solid #61D055;
@@ -570,24 +547,13 @@ header nav ul img{
     .zonarandom div p{
         font-size: 0.7rem;
     }
-
 }
 
 @media screen and (max-width:350px){
-    header nav ul img{
-        height: 30px;
-        padding: 7px 0px 0px 0px;
-    }
+    
+     /* ------------index------------*/
     .botonRosa{
         font-size: 0.6rem;
-    }
-    .hero{
-        padding-left: 20px;
-        padding-top: 0px;
-    }
-    .hero{
-        background-position-y: -10px;
-        background-position-x: -448px;
     }
     .productos img{
         width: 80px;
@@ -600,4 +566,4 @@ header nav ul img{
         width: 215px;
         height: 120px;
     }
-}
+} 
