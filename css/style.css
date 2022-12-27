@@ -429,6 +429,7 @@ header{
     .hero{
         padding-left: 30px;
         padding-top: 30px;
+        height: 80vh;
     }
 
     .hero a{
@@ -471,8 +472,11 @@ header{
     .hero{
         padding-left: 25px;
         padding-top: 15px;
-        height: 50vh;
+        height: 45vh;
         background-size: 800px;
+    }
+    .hero p {
+        font-size: 0.8rem;
     }
     .nosotros h2{
         font-size: 1rem;
@@ -515,6 +519,13 @@ header{
     header div a img{
         height: 25px;
     }
+    .hero{
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 42vh;
+        background-size: 650px;
+        background-position-y: 55px;
+    }
     .productos div{
         border: 3px solid #61D055;
         margin: 3px;
@@ -552,7 +563,10 @@ header{
 @media screen and (max-width:350px){
     
      /* ------------index------------*/
-    .botonRosa{
+     header div a img{
+        height: 20px;
+    }
+     .botonRosa{
         font-size: 0.6rem;
     }
     .productos img{
