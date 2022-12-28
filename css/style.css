@@ -18,7 +18,11 @@ header{
     top: 0;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.966);
+}
 
+.botonRosa:hover{
+    color: white;
+    background-color: #61D055;
 }
 
 /* -----------------------main----------------------*/
@@ -153,18 +157,18 @@ header{
     display: flex;
     justify-content: stretch;
 }
-
-.almacenTitulo {
+.almacenTitulo{
     background-color: #E01F32;
     padding: 20px;
     margin: 5px;
     color: white;
 }
-
+.almacenTitulo h1{
+    font-size: 1.3rem;
+}
 .almacenTitulo p{
     text-align: justify;
 }
-
 .almacenProductos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -172,21 +176,26 @@ header{
     gap: 10px;
     margin: 5px;
 }
-
+.almacenProductos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 .almacenProductos div img{
     width: 350px;
 }
-
 .almacenProductos div h2{
     padding: 0px 0px 0px 20px;
     font-size: 1rem;
+    width: 100%;
 }
-
 .almacenProductos div p{
     background-color: #61d0553b;
     border-radius: 10px;
-    padding: 0px 0px 0px 20px;
+    padding: 5px 0px 5px 20px;
     font-size: 0.8rem;
+    width: 100%;
 }
 
 /*----------------------conocenos-------------------*/
@@ -288,7 +297,7 @@ header{
     border-radius: 20px;
     width: 350px;
     height: 70px;
-    color: #7F1C24 ;
+    color: white;
     font-size: 0.8 rem;
     font-weight: 400;
     display: flex;
@@ -301,11 +310,15 @@ header{
     text-decoration: none;
     color: white;
 }
+.mensaje a:hover{
+    color: #E01F32;
+}
+.mensaje p{
+    margin-bottom: 0px;
+}
 
 
 /* ----------------------footer---------------------*/
-
-
 .footerLogos{
     background-color: #E01F32;
     display: flex;
@@ -316,17 +329,14 @@ header{
     box-shadow: 3px 3px 10px #00000062;
     
 }
-
 .footerLogosRedes img{
     height: 40px;
     margin: 10px;
 }
-
 .footerLogosContactanos{
     display: flex;
     align-items: center;
 }
-
 .footerLogosContactanos a{
     text-decoration: none;
     color: white;
@@ -362,6 +372,11 @@ header{
     }
 }
 
+    /* ------------almacen------------*/
+    .almacenProductos div img{
+        width: 100%;
+    }
+
 @media screen and (max-width: 992px){
 
     .hero{
@@ -388,12 +403,22 @@ header{
         width: 200px;
         height: 200px;
     }
-
+    /* -------mensaje pegaso --------*/
     .mensaje{
         width: 200px;
     }
     .mensaje p{
         display: none;
+    }
+}
+
+@media screen and (max-width: 890px){
+    /* ----------almacen-------------*/
+    .almacenTitulo p{
+        font-size: 0.8rem;
+    }
+    .almacen{
+            flex-direction: column;
     }
 }
 
@@ -455,9 +480,10 @@ header{
         width: 400px;
         height: 220px;
     }
+    /* -------mensaje pegaso --------*/
     .mensaje{
         display: none;
-    }
+    }    
 }
 
 @media screen and (max-width: 560px){
@@ -473,7 +499,7 @@ header{
         padding-left: 25px;
         padding-top: 15px;
         height: 45vh;
-        background-size: 800px;
+        background-size: 880px;
     }
     .hero p {
         font-size: 0.8rem;
@@ -496,17 +522,23 @@ header{
     .zonarandom div p{
         font-size: 0.8rem;
     }
+    /*--------------almacen------------*/
+   .almacenProductos{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    }
+    /*------------footer--------------*/
     .footerLogosRedes{
         height: 50px;
     }
     .footerLogosRedes img{
-        height: 30px;
+        height: 25px;
     }
     .footerLogosContactanos img{
         height: 20px;
     }
     .footerLogosContactanos a{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
     .logoFinal img{
         height: 10px;
@@ -519,12 +551,13 @@ header{
     header div a img{
         height: 25px;
     }
+    /*--VERIFICAR EN EL CELULAR--*/
     .hero{
         padding-left: 15px;
         padding-top: 15px;
         height: 42vh;
-        background-size: 650px;
-        background-position-y: 55px;
+        background-size: 600px;
+        background-position-y: 60px;
     }
     .productos div{
         border: 3px solid #61D055;
@@ -550,7 +583,6 @@ header{
         padding: 5px;
         font-size: 0.8rem;
     }
-
     .zonarandom div iframe{
         width: 255px;
         height: 145px;
@@ -558,6 +590,26 @@ header{
     .zonarandom div p{
         font-size: 0.7rem;
     }
+    /*--------------almacen------------*/
+    .almacenTitulo h1{
+        font-size: 0.8rem;
+    }
+    .almacenTitulo p{
+        font-size: 0.6rem;
+    }
+    .almacenProductos{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    }
+    .almacenProductos div h2{
+        font-size: 0.8rem;
+    }
+    .almacenProductos div p{
+        font-size: 0.6rem;
+    }
+    .almacenProductos div img{
+        width: 200px;
+    }   
 }
 
 @media screen and (max-width:350px){
