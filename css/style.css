@@ -469,6 +469,7 @@ nav{
     .conocenos{
         flex-direction: column;
     }
+}
 
 @media screen and (max-width: 650px){
     
@@ -635,24 +636,24 @@ nav{
         width: 200px;
     }   
 }
+
 @media screen and (max-width:350px){
-    
-     /* ------------index------------*/
-     header div a img{
-        height: 20px;
-    }
-     .botonRosa{
-        font-size: 0.6rem;
-    }
-    .productos img{
-        width: 80px;
-        height: 80px; 
-    }
-    .nosotrosIntro div p{
-        padding: 0px 10px;
-    }
-    .zonarandom div iframe{
-        width: 215px;
-        height: 120px;
-    }
+         /* ------------index------------*/
+         header div a img{
+            height: 20px;
+        }
+         .botonRosa{
+            font-size: 0.6rem;
+        }
+        .productos img{
+            width: 80px;
+            height: 80px; 
+        }
+        .nosotrosIntro div p{
+            padding: 0px 10px;
+        }
+        .zonarandom div iframe{
+            width: 215px;
+            height: 120px;
+        }
 }
