@@ -46,38 +46,43 @@
         <section class="contactanosFormulario">
             <form action=""></form>
                  <fieldset>
-                    <legend>Datos de contacto</legend>                    
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" name="nombre">
-                    <label for="mail">correo electrónico</label>
-                    <input type="mail" name="mail">
-
-                    <div> Indique tipo de consulta</div>
-                    <select name="tipo">Tipo de consulta
-                        <option value="tipo">Tipo de consulta</option>
-                        <option value="pago">Metodo de pago</option>
-                        <option value="devolucion">Devolucion</option>
-                        <option value="envio">Envio</option>
-                    </select>
-
-                    <div>Estado del pedido</div>
-                    <div>
-                        <label for="preparacion">Preparación</label>
-                        <input type="radio" name="tipoconsulta">
-                        <label for="camino">En camino</label>
-                        <input type="radio" name="tipoconsulta">
-                        <label for="recibido">Recibido</label>
-                        <input type="radio" name="tipoconsulta">
-                        <label for="otro">Otro</label>
-                        <input type="radio" name="tipoconsulta">
+                    <div class="contactoDatos">
+                        <legend>Datos de contacto</legend>                    
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre">
+                        <label for="mail">correo electrónico</label>
+                        <input type="mail" name="mail">
                     </div>
-                    <div>
-                        <h3>Dejanos tu comentario</h3>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="contactoDatos">
+                        <div> Indique tipo de consulta</div>
+                        <select name="tipo">Tipo de consulta
+                            <option value="tipo">Tipo de consulta</option>
+                            <option value="pago">Metodo de pago</option>
+                            <option value="devolucion">Devolucion</option>
+                            <option value="envio">Envio</option>
+                        </select>
                     </div>
-
-                    <input type="submit">
-                    <input type="reset" value="Limpiar formulario">
+                    <div class="contactoDatos">
+                        <div>Estado del pedido</div>
+                        <div>
+                            <label for="preparacion">Preparación</label>
+                            <input type="radio" name="tipoconsulta">
+                            <label for="camino">En camino</label>
+                            <input type="radio" name="tipoconsulta">
+                            <label for="recibido">Recibido</label>
+                            <input type="radio" name="tipoconsulta">
+                            <label for="otro">Otro</label>
+                            <input type="radio" name="tipoconsulta">
+                        </div> 
+                    </div>
+                    <div class="contactoDatos">
+                        <div>
+                            <h3>Dejanos tu comentario</h3>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <input class="botonProductoCompra" type="submit">
+                        <input class="botonProductoCarrito" type="reset" value="Limpiar formulario">
+                    </div>
                 </fieldset>
         </section>
     </main>
