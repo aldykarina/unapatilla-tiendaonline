@@ -1,0 +1,41 @@
+$fontfamily: 'Lemonada', cursive;
+
+$colores:
+white, 
+black,
+#E01F32,    
+#F8485E,   
+#7F1C24,  
+#61D055,   
+#61d0553f;  
+
+%botonverde {
+    text-decoration: none;
+    color: nth($colores, 1);
+    background-color: nth($colores, 6);
+    padding: 3px 15px;
+    border-radius: 20px;
+    &:hover{
+        color: nth($colores, 5);
+    }
+}
+
+%botonrosa {
+    text-decoration: none;
+    color: nth($colores, 1) ;
+    background-color: nth($colores, 3);
+    padding: 2px 15px 2px 15px ;
+    border-radius: 20px;
+    &:hover{
+        color: nth($colores, 1);
+        background-color: nth($colores, 6);
+    }
+}
+
+
+@mixin flex ($flex, $justify, $align, $direction){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

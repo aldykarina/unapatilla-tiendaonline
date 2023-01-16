@@ -1,0 +1,44 @@
+/*------FOOTER------*/
+
+footer{
+    .footerLogos{
+        @include flex(flex, space-evenly, center, row);
+        background-color: nth($colores, 3);
+        margin: 5px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px #00000062;   
+        .footerLogosRedes{
+            a{
+                img{
+                    height: 40px;
+                    margin: 10px;
+                    transition: 0.5s ease all;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .footerLogosContactanos{
+            display: flex;
+            align-items: center;
+            img{
+                height: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: nth($colores, 1);
+                padding: 5px;
+            }
+        }
+    }
+    .logoFinal{
+        display: flex;
+        justify-content: center;
+        a{
+            img{
+                height: 20px;
+            }
+        }
+    }
+}

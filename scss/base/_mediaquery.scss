@@ -1,0 +1,364 @@
+/* --------------------media queries---------------------*/
+@media screen and (max-width: 1190px){    
+    /* ------------index------------*/
+    .productos div img{
+        width: 280px;
+        height: 280px; 
+    }
+    .productos div h3{
+        font-size: 1rem; 
+    }
+    .nosotros div img{
+        width: 300px;
+        height: 300px;
+    }
+        /* ------------almacen------------*/
+    .almacen .almacenProductos div a img{
+            width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .hero{
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+    /* ------------conocenos------------*/
+    .conocenos .conocenosColumn img{
+        width: 300px;
+        height: 300px;
+    }
+    .conocenos .conocenosReverse img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    /* ------------index------------*/
+    .productos div img{
+        width: 180px;
+        height: 180px; 
+    }
+    .productos div h3{
+        font-size: 0.8rem;
+    }
+
+    .nosotros div img{
+        width: 200px;
+        height: 200px;
+    }
+    /* -------mensaje pegaso --------*/
+    .mensaje{
+        width: 200px;
+    }
+    .mensaje p{
+        display: none;
+    }
+    /*------contactanos------*/
+    .contactanosTitulo h1{
+        font-size: 1.2rem;
+    }
+    .contactanos .contactanosTitulo p{
+        font-size: 0.8rem;
+    }
+    .contactanos .contactanosFormulario fieldset .contactoDatos{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 890px){
+    /* ----------almacen-------------*/
+    .almacen .almacenTitulo p {
+        font-size: 0.8rem;
+    }
+    .almacen{
+            flex-direction: column;
+    }
+    /*---Producto1---*/
+    .productoDescripcion{
+        flex-direction: column;
+    }
+    .productoDescripcion section img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    /* ------------index------------*/
+
+    .nosotros .nosotrosIntro img{
+        display: none;
+    }
+
+    .zonarandom div{
+        flex-direction: column;
+    }
+
+    .zonarandom div p{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .zonarandom div iframe{
+        width: 500px;
+        height: 280px;
+    }
+    /* ------------conocenos------------*/
+    .conocenos{
+        flex-direction: column;
+    }
+    .conocenos .conocenosReverse{
+        flex-direction: column-reverse;
+    }
+    /*-----contactanos------*/
+    .contactanos{
+        flex-direction: column;
+    }
+    .contactanos .contactanosTitulo{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    
+    /* ------------index------------*/
+    header nav div a img{
+        height:50px;
+    }
+    .hero{
+        padding-left: 30px;
+        padding-top: 30px;
+        height: 80vh;
+    }
+
+    .hero a{
+        font-size: 0.8rem;
+    }
+
+    .productos div img{
+        width: 100px;
+        height: 100px; 
+    }
+    .productos div h3{
+        display: none;
+    }
+    .productos div a{
+        font-size: 0.8rem;
+    }
+
+    .nosotros .nosotrosIntro div p{
+        font-size: 0.85rem;
+    }
+
+    .zonarandom div iframe{
+        width: 400px;
+        height: 220px;
+    }
+    /* -------mensaje pegaso --------*/
+    .mensaje{
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 560px){
+
+    /* ------------index------------*/
+    header nav div a img{
+        height: 35px;
+    }
+    header nav div div ul li .botonRosa{
+        font-size: 0.7rem;
+    }
+    .nosotros .nosotrosIntro div .botonRosa{
+        font-size: 0.7rem;
+    }
+
+    .hero{
+        padding-left: 25px;
+        padding-top: 15px;
+        height: 45vh;
+        background-size: 880px;
+    }
+    .hero p {
+        font-size: 0.8rem;
+    }
+    .nosotros h2{
+        font-size: 1rem;
+    }
+
+    .zonarandom div iframe{
+        width: 300px;
+        height: 170px;
+    }
+
+    .zonarandom h2{
+        font-size: 1rem;
+    }
+    .zonarandom div{
+        padding: 0px;
+    }
+    .zonarandom div p{
+        font-size: 0.8rem;
+    }
+    /*--------------almacen------------*/
+    .almacen .almacenProductos{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    }
+    /* ------------conocenos------------*/
+    .conocenos .conocenosColumn div h1{
+        font-size: 1rem;
+    }
+    .conocenos .conocenosColumn div p{
+        font-size: 0.8rem;
+    }
+    .conocenos .conocenosColumn img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .conocenos .conocenosReverse div h1{
+        font-size: 1rem;
+    }
+    .conocenos .conocenosReverse div p{
+        font-size: 0.8rem;
+    }
+    .conocenos .conocenosReverse img{
+        width: 200px;
+        height: 200px;
+    }
+    /*------------footer--------------*/
+    footer .footerLogos .footerLogosRedes{
+        height: 50px;
+    }
+    footer .footerLogos .footerLogosRedes a img{
+        height: 25px;
+    }
+    footer .footerLogos .footerLogosContactanos img{
+        height: 20px;
+    }
+    footer .footerLogos .footerLogosContactanos a{
+        font-size: 0.5rem;
+    }
+    footer .logoFinal a img{
+        height: 10px;
+    }
+}
+@media screen and (max-width:410px){
+    
+    /* ------------index------------*/
+    header nav div a img{
+        height: 25px;
+    }
+    .hero{
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 42vh;
+        background-size: 600px;
+        background-position-y: 60px;
+    }
+    .productos div{
+        border: 3px solid nth($colores, 6);
+        margin: 3px;
+    }
+    .productos div a{
+        font-size: 0.6rem;
+    }
+    .nosotros h2{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    .nosotros .nosotrosIntro{
+        padding: 0px 10px;
+    }
+    .nosotros .nosotrosIntro div p{
+        font-size: 0.7rem;
+    }
+    .zonarandom{
+        margin: 10px;
+    }
+    .zonarandom h2{
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    .zonarandom div iframe{
+        width: 255px;
+        height: 145px;
+    }
+    .zonarandom div p{
+        font-size: 0.7rem;
+    }
+    /*--------------almacen------------*/
+    .almacen .almacenTitulo h1{
+        font-size: 0.8rem;
+    }
+    .almacen .almacenTitulo p{
+        font-size: 0.6rem;
+    }
+    .almacen .almacenProductos{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    }
+    .almacen .almacenProductos div h2{
+        font-size: 0.8rem;
+    }
+    .almacen .almacenProductos div p{
+        font-size: 0.6rem;
+    }
+    .almacen .almacenProductos div a img{
+        width: 200px;
+    }
+    /*---Producto1---*/
+    .productoDescripcion section h1{
+        font-size: 1rem;
+    }
+    .productoDescripcion section p{
+        font-size: 0.8rem;
+    }
+    .productoDescripcion section div .botonProductoCompra{
+        width: 200px;
+        font-size: 0.8rem;
+    }
+    .productoDescripcion section div .botonProductoCarrito{
+        width: 200px;
+        font-size: 0.8rem;
+    }
+    /*------contactanos-----*/
+    .contactanos .contactanosFormulario fieldset .contactoDatos div textarea{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:350px){
+    /* ------------index------------*/
+    header nav div a img{
+        height: 20px;
+    }
+
+    header nav div div ul li .botonRosa{
+        font-size: 0.6rem;
+    }
+    .nosotros .nosotrosIntro div .botonRosa{
+        font-size: 0.6rem;
+    }
+
+    .productos div img{
+        width: 80px;
+        height: 80px; 
+    }
+    .nosotros .nosotrosIntro div p{
+       padding: 0px 10px;
+    }
+    .zonarandom div iframe{
+        width: 215px;
+        height: 120px;
+    }
+    /*------contactanos-----*/
+    .contactanos .contactanosFormulario fieldset .contactoDatos div{
+        width: 200px;
+    }
+}

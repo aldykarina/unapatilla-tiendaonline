@@ -1,0 +1,330 @@
+/*------MAIN------*/
+
+.hero{
+    height: 90vh;
+    background-image: url(../img/unapatilla.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: inherit;
+    background-position-x: center;
+    padding-left: 70px;
+    padding-top: 50px;
+    p{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: nth($colores, 5);
+    }
+    .botonVerde{
+        @extend %botonverde;
+    }
+}
+
+.productos{
+    @include flex(flex, space-around, center, row);
+    background-color: nth($colores, 4);
+    padding: 30px;
+    border: 5px solid nth($colores, 1);
+    border-radius: 20px;
+    div{
+        display: flex;
+        flex-direction: column;
+        border: 5px solid nth($colores, 6);
+        border-radius: 20px;
+        text-align: center;
+        margin: 10px;
+        transition: 0.3s ease all;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: -3px 0px 7px 3px rgba(127,28,36,0.53);
+            -webkit-box-shadow: -3px 0px 7px 3px rgba(127,28,36,0.53);
+            -moz-box-shadow: -3px 0px 7px 3px rgba(127,28,36,0.53);
+        }
+        img{
+            width: 350px;
+            height: 100%;
+            border-radius: 15px 15px 0px 0px;
+            vertical-align: baseline;
+        }
+        h3{
+            background-color: nth($colores, 1);
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+            color: nth($colores, 1);
+            border-radius: 0px 0px 10px 10px;
+            background-color: nth($colores, 6);
+        }
+    }
+}
+
+.nosotros{
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 20px;
+    }
+    .nosotrosIntro{
+        @include flex(flex, space-around, center, row);
+        text-align: center;
+        padding: 20px;
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        div{
+            p{
+                padding: 0px 20px 20px 20px;
+            }
+            .botonRosa{
+                @extend %botonrosa;
+            }
+        }
+    } 
+}  
+
+.zonarandom{
+    background-color: nth($colores, 5);
+    padding: 20px;
+    color: nth($colores, 1);
+    border: 5px solid nth($colores, 1);
+    border-radius: 20px;
+    margin: 25px;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 15px;
+    }
+    div{
+        @include flex(flex, space-evenly, center, row-reverse);
+        text-align: justify;
+        padding: 20px;
+        p{
+            width: 600px;
+            padding: 20px;
+        }
+    }
+}
+
+/*------mensaje pegajoso------*/
+
+.mensaje{
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    background-color: nth($colores, 6);
+    border-radius: 20px;
+    width: 350px;
+    height: 70px;
+    color: nth($colores, 1);
+    font-size: 0.8 rem;
+    font-weight: 400;
+    @include flex(flex, center, center, column);
+    &:hover{
+        animation: mensajito 1s forwards infinite;
+    }
+    @keyframes mensajito{
+        0%{
+            transform: scale(1.1);
+        }
+        100%{
+            border-radius: 20px 20px 0px 20px;
+        }
+    }
+    p{
+        margin-bottom: 0px;
+    }
+    .botonVerde{
+        @extend %botonverde;
+    }
+}
+
+/*----------------------almacen---------------------*/
+
+.almacen{
+    display: flex;
+    justify-content: stretch;
+    .almacenTitulo{
+        background-color: nth($colores, 3);
+        padding: 20px;
+        margin: 5px;
+        color: nth($colores, 1);
+        h1{
+            font-size: 1.3rem;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+    .almacenProductos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        margin: 5px;
+        div{
+            @include flex(flex, space-between, center, column);
+            a{
+                img{
+                    width: 350px;
+                }
+            }
+            h2{
+                padding: 0px 0px 0px 20px;
+                font-size: 1rem;
+                width: 100%;
+            }
+            p{
+                background-color: nth($colores, 7);
+                border-radius: 10px;
+                padding: 5px 0px 5px 20px;
+                font-size: 0.8rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*----------------------conocenos-------------------*/
+
+.conocenos{
+    display: flex;
+    .conocenosColumn{
+        @include flex(flex, center, center, column);
+        padding: 20px;
+        img{
+            width: 400px;
+            height: 400px;
+        }
+        div{
+            h1{
+                padding: 5px;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
+    .conocenosReverse{
+        @include flex(flex, center, center, column);
+        padding: 20px;
+        div{
+            h1{
+                padding: 5px;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+
+/*----------------------contactanos-------------------*/
+
+.contactanos{
+    display: flex;
+    margin: 5px;
+    justify-content: first baseline;
+    .contactanosTitulo{
+        background-color: nth($colores, 3);
+        color: nth($colores, 1);
+        width: 50%;
+        padding: 20px;
+    }
+    .contactanosFormulario{
+        padding: 20px;
+        fieldset{
+            padding: 20px;
+            border: 1px solid nth($colores, 7) ;
+            border-radius: 5px;
+            .contactoDatos{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+                label{
+                    font-size: 0.8rem;
+                }
+                div{
+                    font-size: 0.9rem;
+                }
+                select{
+                    font-size: 0.8rem;
+                }
+                div{
+                    font-size: 0.9rem;
+                    label{
+                        font-size: 0.8rem;
+                    }
+                }
+                div{
+                    font-size: 0.9rem;
+                    h3{
+                        font-size: 1rem;
+                    }
+                }
+            }    
+        }
+    }
+}
+
+/*----------------------producto1-------------------*/
+
+.productoDescripcion{
+    @include flex(flex, center, center, row);
+    margin: 10px;
+    section{
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    section{
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            padding: 25px;
+        }
+        div{
+            @include flex(flex, center, center, column);
+            padding-bottom: 30px;
+           .botonProductoCompra{
+                text-decoration: none;
+                text-align: center;
+                color: nth($colores, 1) ;
+                background-color: nth($colores, 3);
+                padding: 2px 15px 2px 15px ;
+                border-radius: 10px;
+                width: 300px;
+                &:hover{
+                    color: nth($colores, 1);
+                    background-color: nth($colores, 6);
+                }
+           }
+           .botonProductoCarrito{
+                text-decoration: none;
+                text-align: center;
+                color: nth($colores, 2) ;
+                padding: 2px 15px 2px 15px ;
+                border-radius: 10px;
+                border: 1px solid;
+                border-color: nth($colores, 2);
+                width: 300px;
+                margin-top: 5px;
+                &:hover{
+                    color: nth($colores, 5);
+                    font-weight: 600;
+                }
+           }
+        }
+    }
+}
+

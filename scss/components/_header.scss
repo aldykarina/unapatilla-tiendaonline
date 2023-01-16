@@ -1,0 +1,32 @@
+/*------HEADER------*/
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.966);
+    nav{
+        border-bottom: 2px solid;
+        border-color: #0000001a;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 3px 3px 10px #0000001a;
+        padding: 1px;
+        div{
+            div{
+                ul{
+                    li{
+                        .botonRosa{
+                            @extend %botonrosa;
+                        }
+                    }
+                }
+            }
+            .navbar-brand{
+                transition: 0.5s ease all;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
