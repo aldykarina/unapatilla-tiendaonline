@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="sandia, patilla, regalos, souvenirs, objetos, watermelon, fruta, verano, comprar">
+    <meta name="description" content="Somo la tienda de regalo mas original de sandias. Lo que buscabas, encuentralo por acá.">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
@@ -46,7 +47,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex nemo voluptates fugiat obcaecati a commodi provident, eum est, magni quia tempore eaque repudiandae voluptatibus? Iure amet consequatur repudiandae esse!</p>
         </section>
         <section class="contactanosFormulario">
-            <form action=""></form>
+            <form action="" name="contacnosunapatilla" data-netlify="true"></form>
                  <fieldset>
                     <div class="contactoDatos">
                         <legend>Datos de contacto</legend>                    
@@ -82,7 +83,8 @@
                             <h3>Dejanos tu comentario</h3>
                             <textarea name="" id="" cols="30" rows="10"></textarea>
                         </div>
-                        <input class="botonProductoCompra" type="submit">
+                        <div data-netlify-recaptcha="true"></div>
+                        <input class="botonProductoCompra" type="submit" value="Enviar">
                         <input class="botonProductoCarrito" type="reset" value="Limpiar formulario">
                     </div>
                 </fieldset>
