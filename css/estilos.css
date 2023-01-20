@@ -18,6 +18,32 @@ header nav div div ul li .botonRosa, .nosotros .nosotrosIntro div .botonRosa {
     color: white;
     background-color: #61D055; }
 
+.contactanos .contactanosFormulario fieldset .contactoDatos .botonProductoCompra, .productoDescripcion section div .botonProductoCompra {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #E01F32;
+  padding: 2px 15px 2px 15px;
+  border-radius: 10px;
+  width: 300px; }
+  .contactanos .contactanosFormulario fieldset .contactoDatos .botonProductoCompra:hover, .productoDescripcion section div .botonProductoCompra:hover {
+    color: white;
+    background-color: #61D055; }
+
+.contactanos .contactanosFormulario fieldset .contactoDatos .botonProductoCarrito, .productoDescripcion section div .botonProductoCarrito {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 2px 15px 2px 15px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: black;
+  width: 300px;
+  margin-top: 5px; }
+  .contactanos .contactanosFormulario fieldset .contactoDatos .botonProductoCarrito:hover, .productoDescripcion section div .botonProductoCarrito:hover {
+    color: #7F1C24;
+    font-weight: 600; }
+
 * {
   margin: 0;
   padding: 0;
@@ -294,30 +320,6 @@ header {
     align-items: center;
     flex-direction: column;
     padding-bottom: 30px; }
-    .productoDescripcion section div .botonProductoCompra {
-      text-decoration: none;
-      text-align: center;
-      color: white;
-      background-color: #E01F32;
-      padding: 2px 15px 2px 15px;
-      border-radius: 10px;
-      width: 300px; }
-      .productoDescripcion section div .botonProductoCompra:hover {
-        color: white;
-        background-color: #61D055; }
-    .productoDescripcion section div .botonProductoCarrito {
-      text-decoration: none;
-      text-align: center;
-      color: black;
-      padding: 2px 15px 2px 15px;
-      border-radius: 10px;
-      border: 1px solid;
-      border-color: black;
-      width: 300px;
-      margin-top: 5px; }
-      .productoDescripcion section div .botonProductoCarrito:hover {
-        color: #7F1C24;
-        font-weight: 600; }
 
 /*------FOOTER------*/
 footer .footerLogos {
