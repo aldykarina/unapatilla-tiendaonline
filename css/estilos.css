@@ -250,6 +250,9 @@ header {
       padding: 5px; }
     .conocenos .conocenosColumn div p {
       text-align: justify; }
+      .conocenos .conocenosColumn div p a {
+        text-decoration: none;
+        color: #E01F32; }
   .conocenos .conocenosReverse {
     display: flex;
     justify-content: center;
@@ -305,7 +308,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 10px; }
+  margin: 10px;
+  height: 80vh; }
   .productoDescripcion section img {
     width: 500px;
     height: 500px; }

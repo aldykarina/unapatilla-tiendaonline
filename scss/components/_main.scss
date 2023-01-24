@@ -205,6 +205,10 @@
             }
             p{
                 text-align: justify;
+                a{
+                    text-decoration: none;
+                    color: nth($colores, 3);
+                }
             }
         }
     }
@@ -285,6 +289,7 @@
 .productoDescripcion{
     @include flex(flex, center, center, row);
     margin: 10px;
+    height: 80vh;
     section{
         img{
             width: 500px;
