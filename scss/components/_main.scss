@@ -221,6 +221,10 @@
             }
             p{
                 text-align: justify;
+                a{
+                    text-decoration: none;
+                    color: nth($colores, 3);
+                }
             }
         }
         img{
