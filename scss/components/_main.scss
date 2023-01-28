@@ -293,11 +293,10 @@
 .productoDescripcion{
     @include flex(flex, center, center, row);
     margin: 10px;
-    height: 80vh;
     section{
         img{
-            width: 500px;
-            height: 500px;
+            width: 400px;
+            height: 400px;
         }
     }
     section{
@@ -306,7 +305,7 @@
         }
         p{
             text-align: justify;
-            padding: 25px;
+            padding: 15px;
         }
         div{
             @include flex(flex, center, center, column);
